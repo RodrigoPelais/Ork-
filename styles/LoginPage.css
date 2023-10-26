@@ -1,0 +1,25 @@
+@import url('https://fonts.cdnfonts.com/css/verdana');
+
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+header {
+    margin-top:20px ;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+.aviso{
+    display: flex;
+    justify-content: right;
+}
