@@ -1,25 +1,195 @@
-@import url('https://fonts.cdnfonts.com/css/verdana');
-
-
 * {
-    margin: 0; 
+    margin: 0;
     padding: 0;
-}
-
-header {
-    margin-top:20px ;
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 40px;
-    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: 62.5%;
+  
+    --bg: #d9e6f6;
+    --button-login: #2e7bb4;
+    --button-login-hover: #1e6296;
+    --footer-home: #bbcde8;
+    --bg-white: #fff;
+    --bg-login: #f1f9fe;
+    --text-color-pink: #d81d99;
+    --text-color-black: #333;
+    --text-color-gray: #5a5a5a;
+    --input-border: #c5c6ca;
+    --text-white: #fff;
+    --text-links: #2e7bb4;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    /* overflow: hidden; */
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  body {
+    font-size: 1.6rem;
+    background: var(--bg);
+    width: 100vw;
+    height: 100vh;
+    font-family: "Rubik", sans-serif;
     display: flex;
     justify-content: center;
-    font-family: Verdana;
-    background-color: beige;
-    border-radius: 10px;
-}
-
-.aviso{
+    align-items: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    flex-direction: column;
+    width: 111rem;
+    height: auto;
+  }
+  
+  /* MAIN LOGO */
+  
+  .home {
     display: flex;
-    justify-content: right;
-}
+    gap: 1.2rem;
+  }
+  
+  .welcome {
+    background: var(--bg-white);
+    width: 73.9rem;
+    height: 36.8rem;
+  }
+  
+  section .logo {
+    padding: 8rem 14rem 2rem 14rem;
+  }
+  
+  section .description {
+    color: var(--text-color-black);
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  section .description p + p {
+    margin-top: 0.5rem;
+  }
+  
+  section .description span {
+    color: var(--text-color-pink);
+    font-weight: bold;
+  }
+  
+  /* LOGIN */
+  
+  .login {
+    background: var(--bg-login);
+    width: 27.9rem;
+    height: 36.8rem;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .login p {
+    color: var(--text-color-gray);
+    max-width: 17.4rem;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-bottom: 2.5rem;
+    padding-top: 1.5rem;
+  }
+  
+  .login p span {
+    font-weight: 700;
+  }
+  
+  form input {
+    border-radius: 0.1rem;
+    border: 1px solid var(--input-border);
+    display: flex;
+    justify-content: center;
+    width: 20.9rem;
+    height: 3.2rem;
+    padding: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+  
+  .login button {
+    width: 8rem;
+    height: 3.2rem;
+    border: 1px solid var(--input-border);
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all ease 0.3s;
+  }
+  
+  .login a button {
+    color: var(--text-white);
+  }
+  
+  .login button:hover {
+    background: var(--button-login-hover);
+  }
+
+  .login a{
+    text-decoration: none;
+    color: var(--button-login-hover);
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .create p{
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  create a{
+    text-align: center;
+    padding-bottom: 40px;
+    padding-left: 10px;
+  }
+  /* FOOTER */
+  
+  footer {
+    display: flex;
+    align-items: center;
+    background: var(--footer-home);
+    width: 100%;
+    margin-top: 1.6rem;
+    border-radius: 0.8rem;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding-block: 0.6rem;
+  }
+  footer p {
+    padding-right: 0.5rem;
+  }
+  
+  footer ul {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  }
+  
+  footer li::before {
+    content: "-";
+    padding: 0.5rem;
+  }
+  
+  footer ul a {
+    text-decoration: none;
+    color: var(--text-links);
+  }
+   footer ul a:hover {
+    filter: brightness(0.7);
+  }

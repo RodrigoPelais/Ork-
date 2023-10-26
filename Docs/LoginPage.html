@@ -1,56 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ORKUT+</title>
     <link rel="stylesheet" href="/styles/LoginPage.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Ork+Msn</title>
 </head>
 <body>
-    <header>
-        <p class="aviso"><span>Aviso:</span> O projeto ORK+MSN é uma recriação baseada nas redes sociais Orkut e Msn sem fins lucrativos!</p>
-    </header>
-    
-    <main>
-        <section class="container">
-            <img src="/images/logo_500x300.png" alt="Nossa logo">
-            <div class="textos">
-                <p><span>Conecte-se</span> aos seus amigos e familiares usando recados e mensagens instantâneas</p>
-                <p><span>Conheça</span> novas pessoas através de amigos de seus amigos e comunidades</p>
-                <p><span>Compartilhe</span> seus vídeos, fotos e paixões em um só lugar</p>
-            </div>
-        </section>
-        
-        <section class="login">
-            <div class="flex">
-                <p>Entre com sua conta</p>
-                <input type="email" placeholder="Email" id="email">
-                <input type="password" placeholder="Senha" id="password">
-                <input type="checkbox" id="checkbox">
-                <label for="checkbox">Salvar as minhas informações neste computador.</label>
-                <button>Login</button>
-                <a href="#">Não consegue acessar sua conta?</a>
-            </div>
-        </section>
-        
-        <section class="cadastrar">
-            <div class="cadastro">
-                <p>Ainda não é membro?</p>
-                <a href="#">ENTRAR JÁ</a>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="rodape">
-            <p>2023-ORK+MSN</p>
-            <a href="#">Sobre o ork+msn</a>
-            <a href="#">Centro de segurança</a>
-            <a href="#">Privacidade</a>
-            <a href="#">Termos</a>
-            <a href="#">Contatos</a>
+    <div class="container">
+        <div class="home">
+            <section class="welcome">
+                <div class="logo">
+                    <figure>
+                        <img src="/images/logo_500x300.png"" alt="Logo ork+msn">
+                    </figure>
+                </div>
+
+                <div class="description">
+                    <p>
+                        <span>Conecte-se</span> aos seus amigos e familiares usando recados e mensagens instantâneas
+                    </p>
+
+                    <p>
+                        <span>Conheça</span> novas pessoas através de amigo  de seus amigos e comunidades              
+                    </p>
+
+                    <p>
+                        <span>Compartilhe</span> seus videos, fotos e paixões em um só lugar
+                    </p>
+                </div>
+            </section>
+
+            <section class="login">          
+                <p>Acesse o <span>Ork+Msn</span> com seu email e senha:</p>
+
+                <form action="#" id="" autocomplete="off">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="password" name="password" id="password" placeholder="Senha"> 
+                </form>
+
+                    <button type="submit">Entrar</button>
+                    <a href="#">Não consegue acessar sua conta?</a>
+                <div class="create">
+                    <p>Ainda não é membro?</p>
+                    <a href="#">ENTRAR JÁ</a>
+                </div>   
+            </section>
         </div>
-    </footer>
+
+        <footer>
+            <p>&copy; 2023 Ork+Msn</p>
+
+            <ul>
+                <li><a href="#">Sobre o Ork+Msn</a></li>
+                <li><a href="#">Centro de segurança</a></li>
+                <li><a href="#">Privacidade</a></li>
+                <li><a href="#">Termos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>
