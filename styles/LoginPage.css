@@ -68,7 +68,7 @@
   }
   
   section .logo {
-    padding: 6rem 8rem 1rem 10rem;
+    padding: 6rem 8rem 1rem 9rem;
   }
   
   section .description {
@@ -163,7 +163,7 @@
     display: flex;
     align-items: center;
     background: var(--footer-home);
-    width: 100%;
+    width: 93%;
     margin-top: 1.6rem;
     border-radius: 0.8rem;
     justify-content: center;
