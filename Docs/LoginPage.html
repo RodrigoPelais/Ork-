@@ -12,7 +12,7 @@
             <section class="welcome">
                 <div class="logo">
                     <figure>
-                        <img src="/images/logo_500x300.png"" alt="Logo ork+msn">
+                        <img src="/images/logo_500x300.png" alt="Logo ork+msn">
                     </figure>
                 </div>
 
@@ -22,11 +22,11 @@
                     </p>
 
                     <p>
-                        <span>Conheça</span> novas pessoas através de amigo  de seus amigos e comunidades              
+                        <span>Conheça</span> novas pessoas através de amigos de seus amigos e comunidades
                     </p>
 
                     <p>
-                        <span>Compartilhe</span> seus videos, fotos e paixões em um só lugar
+                        <span>Compartilhe</span> seus vídeos, fotos e paixões em um só lugar
                     </p>
                 </div>
             </section>
@@ -34,13 +34,15 @@
             <section class="login">          
                 <p>Acesse o <span>Ork+Msn</span> com seu email e senha:</p>
 
-                <form action="#" id="" autocomplete="off">
+                <form action="#">
                     <input type="email" name="email" id="email" placeholder="Email">
                     <input type="password" name="password" id="password" placeholder="Senha"> 
+                    <button type="submit" onclick="logar()">Entrar</button>
+                    <br>
+                    <br>
+                    <a href="#">Não consegue acessar sua conta?</a>
                 </form>
 
-                    <button type="submit">Entrar</button>
-                    <a href="#">Não consegue acessar sua conta?</a>
                 <div class="create">
                     <p>Ainda não é membro?</p>
                     <a href="#">ENTRAR JÁ</a>
@@ -60,5 +62,18 @@
             </ul>
         </footer>
     </div>
+
+    <script>
+        function logar() {
+            var login = document.getElementById('email').value;
+            var senha = document.getElementById('password').value;
+            
+            if (login === "admin" && senha === "admin") {
+                alert("Sucesso");
+            } else {
+                alert("Usuário ou Senha inválido");
+            }
+        }
+    </script>
 </body>
 </html>

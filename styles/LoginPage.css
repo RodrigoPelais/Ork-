@@ -144,8 +144,8 @@
   .login a{
     text-decoration: none;
     color: var(--button-login-hover);
+    align-items: center;
     font-size: 1.5rem;
-    padding-top: 1.5rem;
   }
 
   .create p{
@@ -153,10 +153,9 @@
     text-align: center;
   }
 
-  create a{
+  .create a{
     text-align: center;
-    padding-bottom: 40px;
-    padding-left: 10px;
+    padding-left: 35px;
   }
   /* FOOTER */
   
@@ -190,6 +189,7 @@
     text-decoration: none;
     color: var(--text-links);
   }
-   footer ul a:hover {
+
+    footer ul a:hover {
     filter: brightness(0.7);
   }
